@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import ContextWrapper from './context/ContextWrapper';
 import authReducer from "./state/index.js";
 import { configureStore } from '@reduxjs/toolkit';
