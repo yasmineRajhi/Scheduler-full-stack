@@ -1,16 +1,13 @@
 import './index.css';
-import React, { useState, useContext, useEffect } from 'react';
-import Login from './components/loginPage/Login';
-import CalendarMain from './components/calendar/CalendarMain';
-import MainRouter from './MainRouter';
-import Register from './components/loginPage/Register';
+import React from 'react';
+import Form from './components/loginPage/Form';
 
 
 function App() {
   
   return (
     <React.Fragment>
-      <CalendarMain/>
+      <Form/>
     </React.Fragment>
   );
 }

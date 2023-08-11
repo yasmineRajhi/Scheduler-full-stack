@@ -4,18 +4,20 @@ import {
   Routes,
   Route,
   Navigate,
+  Form,
 } from "react-router-dom";
 import App from "./App";
 import CalendarMain from "./components/calendar/CalendarMain";
-import Login from "./components/loginPage/Login.js";
 import Profile from "./components/profilePage/Profile";
+import Form from "./components/loginPage/Form";
 
 function MainRouter() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<App />} exact />
-        <Route path="/Login" element={<Login />} exact />
+        <Route path="/Login" element={<Form />} exact />
+        <Route path="/Register" element={<Form />} exact />
         <Route path="/Home" element={<CalendarMain />} exact />
         <Route path="/UserProfile" element={<Profile />} exact />
         <Route path="*" element={<Navigate to="/" />} />
